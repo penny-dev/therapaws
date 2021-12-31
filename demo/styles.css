@@ -1,0 +1,172 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400,600,700);
+:root {
+  --color-primary: #00acc1;
+  --color-primary--rgb: 0, 172, 193;
+}
+
+body {
+  margin: 0;
+  color: #06181a;
+  background-color: var(--color-primary);
+  font-family: "Lato", sans-serif;
+}
+
+#wave-1 {
+  fill: rgba(0, 172, 193, 0.7);
+}
+
+#wave-2 {
+  fill: rgba(0, 172, 193, 0.5);
+}
+
+#wave-3 {
+  fill: rgba(0, 172, 193, 0.3);
+}
+
+#wave-4 {
+  fill: #00acc1;
+}
+
+.page-header,
+.page-content,
+.page-footer {
+  padding: 0 1rem;
+}
+.page-top {
+  background-color: #97d5df;
+  padding: .5rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-header,
+.page-content,
+.waves-container {
+  background-color: white;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+h1 strong {
+  display: block;
+  font-weight: 400;
+  font-size: .4em;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.page-top .flex {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .page-top .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+}
+
+.page-top a,
+.page-top a:visited {
+  color: #06181a;
+  text-decoration: none;
+}
+
+.page-top a:hover,
+.page-top a:focus,
+.page-top a:active {
+  text-decoration: underline;
+}
+
+.page-content {
+  min-height: 20vh;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  min-height: 4rem;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+}
+@media (min-width: 768px) {
+  .waves {
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+  }
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
