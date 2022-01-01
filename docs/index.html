@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="wrap">
   <div class="page-top">
     <div class="container flex">
       <span itemprop="telephone">
@@ -22,36 +23,63 @@
   </div>
   <header class="page-header">
     <div class="container flex">
-      <h1>
+      <!-- <h1>
         <strong>A fit dog is a healthy dog</strong>
-        Therapaws</h1>
+        Therapaws</h1> -->
     </div>
   </header>
   <!--Header ends-->
   
+  
   <main class="page-content">
+    <div class="banner flex">
+      <div class="banner-image">
+        <img src="banner-image.jpg" alt="border collie in water">
+        <div class="waves-container">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use class="wave" id="wave-1" xlink:href="#gentle-wave" x="48" y="0" />
+              <use class="wave" id="wave-2" xlink:href="#gentle-wave" x="48" y="3" />
+              <use class="wave" id="wave-3" xlink:href="#gentle-wave" x="48" y="5" />
+              <use class="wave" id="wave-4" xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="banner-content">
+        <h1>
+          <small>Animal Rehabilitation Centre</small><br aria-hidden="true">
+          <strong>Therapaws</strong><br aria-hidden="true">
+          <span>A fit dog is a healthy dog</span>
+        </h1>
+      </div>
+    </div>
+    <!--Banner ends-->
     <div class="container flex">
       <p>Some content here</p>
     </div>
   </main>
   <!--Content ends-->
-  
-  <div class="waves-container">
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use class="wave" id="wave-1" xlink:href="#gentle-wave" x="48" y="0" />
-        <use class="wave" id="wave-2" xlink:href="#gentle-wave" x="48" y="3" />
-        <use class="wave" id="wave-3" xlink:href="#gentle-wave" x="48" y="5" />
-        <use class="wave" id="wave-4" xlink:href="#gentle-wave" x="48" y="7" />
-      </g>
-    </svg>
-  </div>
-  <!--Waves end-->
+</div> 
   
   <footer class="page-footer">
+    <div class="waves-container">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use class="wave" id="wave-1" xlink:href="#gentle-wave" x="48" y="0" />
+          <use class="wave" id="wave-2" xlink:href="#gentle-wave" x="48" y="3" />
+          <use class="wave" id="wave-3" xlink:href="#gentle-wave" x="48" y="5" />
+          <use class="wave" id="wave-4" xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
     <div class="container flex">
       <p>&copy;2022 Therapaws</p>
     </div>

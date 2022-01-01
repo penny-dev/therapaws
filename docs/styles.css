@@ -1,7 +1,11 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400,600,700);
 :root {
-  --color-primary: #00acc1;
-  --color-primary--rgb: 0, 172, 193;
+  --color-primary: #00A2B8;
+  --color-primary--rgb: 0, 162, 184;
+  --color-secondary: #8f8c83; 
+  --color-var-1: #705a51; 
+  --color-var-2: #e76f51; 
+  --color-var-3: #f4a261;
 }
 
 body {
@@ -11,57 +15,53 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-#wave-1 {
-  fill: rgba(0, 172, 193, 0.7);
+.wrap {
+  background-color: white;
 }
 
-#wave-2 {
-  fill: rgba(0, 172, 193, 0.5);
-}
-
-#wave-3 {
-  fill: rgba(0, 172, 193, 0.3);
-}
-
-#wave-4 {
-  fill: #00acc1;
-}
-
-.page-header,
-.page-content,
-.page-footer {
+.page-header .container,
+.page-content .container,
+.page-footer .container {
   padding: 0 1rem;
 }
 .page-top {
-  background-color: #97d5df;
+  background-color: rgba(var(--color-primary--rgb), 0.5);
   padding: .5rem 1rem;
 }
 
 .container {
-  width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
 
 .page-header,
-.page-content,
-.waves-container {
+.page-content {
   background-color: white;
 }
-
+br[aria-hidden=true] {display:none}
 h1 {
   font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
 }
-h1 strong {
+h1 small, h1 strong, h1 span {
   display: block;
   font-weight: 400;
+  letter-spacing: 1px;
+}
+h1 small,
+h1 span {
   font-size: .4em;
+}
+h1 strong {
+}
+.lead {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1024px) {
@@ -95,6 +95,7 @@ p {
 .page-top a:visited {
   color: #06181a;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .page-top a:hover,
@@ -105,9 +106,60 @@ p {
 
 .page-content {
   min-height: 20vh;
+  padding-top: 1rem;
 }
 
-.waves {
+.banner {
+  position: relative;
+  background-color: var(--color-var-3);
+  /* color: white; */
+  max-width: 960px;
+  margin: 0 auto 1rem;
+  flex-direction: column;
+}
+
+
+.banner-image img {
+  display:block;
+  width: 100%;
+  height: auto;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+  }
+  .banner-image {
+    width: 40%;
+  }
+  .banner-content {
+    width: 60%;
+    padding: 0;
+  }
+}
+.banner-content h1 {
+  margin: 0;
+}
+.banner-content .lead {
+  font-size: 1.25rem;
+}
+
+.banner .waves-container {
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+}
+
+.page-footer .waves-container {
+  background-color: white;
+}
+.page-footer .waves {
   position: relative;
   width: 100%;
   height: 3rem;
@@ -116,11 +168,27 @@ p {
   /*Fix for safari gap*/
 }
 @media (min-width: 768px) {
-  .waves {
+  .page-footer .waves {
     height: 15vh;
     min-height: 100px;
     max-height: 150px;
   }
+}
+
+#wave-1 {
+  fill: rgba(var(--color-primary--rgb), 0.7);
+}
+
+#wave-2 {
+  fill: rgba(var(--color-primary--rgb), 0.5);
+}
+
+#wave-3 {
+  fill: rgba(var(--color-primary--rgb), 0.3);
+}
+
+#wave-4 {
+  fill: rgba(var(--color-primary--rgb), 1);
 }
 
 /* Animation */
