@@ -14,18 +14,18 @@
 
 <body>
   <div class="wrap">
-    <div class="page-top">
-      <div class="container d-flex justify-content-between">
+    <section class="page-top">
+      <div class="container d-md-flex justify-content-between">
         <span itemprop="telephone">
-          <i class="fas fa-phone-alt text-light" aria-hidden="true"></i>&nbsp;
+          <i class="fas fa-phone-alt text-light" aria-hidden="true"></i>
           <a href="tel:+01344222299">01344 222299</a>
         </span>
         <span>
-          <i class="fas fa-envelope text-light" aria-hidden="true"></i>&nbsp;
+          <i class="fas fa-envelope text-light" aria-hidden="true"></i>
           <a href="mailto:enquiries@therapaws.co.uk">enquiries@therapaws.co.uk</a>
         </span>
       </div>
-    </div>
+    </section>
     <header class="page-header">
       <div class="container flex">
         <!-- <h1>
@@ -35,21 +35,21 @@
     </header>
     <!--Header ends-->
 
+    <div class="banner d-md-flex">
+      <div class="banner-image">
+        <img src="banner-image.jpg" alt="border collie in water">
+      </div>
+      <div class="banner-content d-flex justify-content-center align-items-center">
+        <h1 class="py-2 text-center">
+          <small>Animal Rehabilitation Centre</small><br aria-hidden="true" class="d-none">
+          <strong>Therapaws</strong><br aria-hidden="true" class="d-none">
+          <span>A fit dog is a healthy dog</span>
+        </h1>
+      </div>
+    </div>
+    <!--Banner ends-->
 
     <main class="page-content">
-      <div class="banner d-flex">
-        <div class="banner-image">
-          <img src="banner-image.jpg" alt="border collie in water">
-        </div>
-        <div class="banner-content">
-          <h1>
-            <small>Animal Rehabilitation Centre</small><br aria-hidden="true" class="d-none">
-            <strong>Therapaws</strong><br aria-hidden="true" class="d-none">
-            <span>A fit dog is a healthy dog</span>
-          </h1>
-        </div>
-      </div>
-      <!--Banner ends-->
       <div class="textbox">
         <h2>Welcome</h2>
 
@@ -87,7 +87,21 @@
     <!--Content ends-->
   </div>
 
-  <section class="container container-small">
+  <section id="testimonials" class="section-testimonials py-5">
+    <div class="container d-flex justify-content-center align-items-center">
+      <figure>
+        <blockquote class="blockquote">
+          <p>Therapaws has helped with my standard poodle and getting her back to correct fitness for agility. All the
+            staff are fab, friendly and knowlegdable. So glad they are close to us and Pearl enjoys her tredmill. She
+            now knows the routine takes herself in there and is happy to see everyone. Easy to find, plenty of parking.
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Lia Henderson</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="general-info" class="container container-small">
     <div class="d-md-flex justify-content-between py-5">
       <div>
         <h3>Opening times and location</h3>
@@ -133,15 +147,20 @@
     </div>
     <!--Waves end-->
 
-    <div class="container d-flex justify-content-center align-items-center pt-3">
+    <section class="section-legal container d-flex justify-content-center align-items-center pt-3">
       <p>Copyright &copy;2022 Therapaws</p>
-    </div>
-    <div class="container d-flex justify-content-center align-items-center">
-      <p><strong>Dog Hydrotherapy Berkshire</strong> ~ <strong>Canine Hydrotherapy Wokingham</strong> ~ <strong>Dog
-          Complimentary Therapy Reading</strong> ~ <strong>Canine Complimentary Therapy Bracknell</strong> ~ <strong>Dog
-          Healing Berkshire</strong> ~ <strong>Canine Healing Wokingham</strong> ~ <strong>Dog Recovery Reading</strong>
-      </p>
-    </div>
+    </section>
+    <section class="section-keywords container">
+      <ul class="d-block text-center py-3 px-0 mb-0">
+        <li>Dog Hydrotherapy Berkshire</li>
+        <li>Canine Hydrotherapy Wokingham</li>
+        <li>Dog Complimentary Therapy Reading</li>
+        <li>Canine Complimentary Therapy Bracknell</li>
+        <li>Dog Healing Berkshire</li>
+        <li>Canine Healing Wokingham</li>
+        <li>Dog Recovery Reading</li>
+      </ul>
+    </section>
   </footer>
   <!--Footer ends-->
 </body>
