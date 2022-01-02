@@ -2,7 +2,7 @@
 :root {
   --color-primary: #00A2B8;
   --color-primary--rgb: 0, 162, 184;
-  --color-secondary: #f7b987; 
+  --color-secondary: #f9c295; 
   --color-copy: #06181a;
   --color-var-1: #705a51; 
   --color-var-2: #e76f51; 
@@ -39,6 +39,21 @@ a:active {
 .page-top {
   background-color: rgba(var(--color-primary--rgb), 0.5);
   padding: .5rem 1rem;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .page-top {
+    text-align: initial;
+  }
+}
+.page-top span {
+  display: inline-block;
+  padding: 0 1rem;
+}
+@media (min-width: 576px) {
+  .page-top span {
+    padding: 0;
+  }
 }
 
 .page-header,
@@ -175,6 +190,9 @@ p {
   top:-4rem;
   margin:0;
   padding:0;
+}
+.section-testimonials .blockquote {
+  font-size: 1rem;
 }
 .section-testimonials .blockquote-footer {
   margin-bottom: 0;
