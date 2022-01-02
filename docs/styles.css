@@ -2,43 +2,50 @@
 :root {
   --color-primary: #00A2B8;
   --color-primary--rgb: 0, 162, 184;
-  --color-secondary: #8f8c83; 
+  --color-secondary: #f7b987; 
+  --color-copy: #06181a;
   --color-var-1: #705a51; 
   --color-var-2: #e76f51; 
   --color-var-3: #f4a261;
+  --color-link: #007E8F;
 }
 
 body {
   margin: 0;
-  color: #06181a;
-  background-color: var(--color-primary);
+  color: var(--color-copy);
+  background: white;
   font-family: "Lato", sans-serif;
 }
 
-.wrap {
-  background-color: white;
+.container-small {
+  max-width: 720px;
 }
 
-.page-header .container,
-.page-content .container,
-.page-footer .container {
-  padding: 0 1rem;
+a, a:visited {
+  color: var(--color-link);
 }
+a:hover,
+a:focus,
+a:active {
+  background: var(--color-secondary);
+  color: var(--color-copy);
+}
+
+.strip {
+  background: var(--color-secondary);
+  padding: 1rem;
+}
+
 .page-top {
   background-color: rgba(var(--color-primary--rgb), 0.5);
   padding: .5rem 1rem;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 .page-header,
 .page-content {
   background-color: white;
 }
-br[aria-hidden=true] {display:none}
+.d-none {display:none}
 h1 {
   font-size: 2.4rem;
   display: flex;
@@ -69,17 +76,22 @@ h1 strong {
     font-size: 4rem;
   }
 }
-
+.textbox {
+  max-width: 78ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
 p {
   letter-spacing: 1px;
+  max-width: 78ch;
+  line-height: 1.25;
 }
 
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
 }
 .page-top .flex {
   flex-direction: column;
@@ -93,7 +105,7 @@ p {
 
 .page-top a,
 .page-top a:visited {
-  color: #06181a;
+  color: var(--color-copy);
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -111,7 +123,7 @@ p {
 
 .banner {
   position: relative;
-  background-color: var(--color-var-3);
+  background-color: var(--color-secondary);
   /* color: white; */
   max-width: 960px;
   margin: 0 auto 1rem;
@@ -155,7 +167,10 @@ p {
   position: absolute;
   z-index: 1;
 }
-
+.page-footer {
+  background-color: var(--color-primary);
+  margin-top: 1rem;
+}
 .page-footer .waves-container {
   background-color: white;
 }
