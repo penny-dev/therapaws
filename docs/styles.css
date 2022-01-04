@@ -17,10 +17,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.container-small {
-  max-width: 720px;
+.bg-primary {
+  background-color: var(--color-primary) !important;
 }
-
 a, a:visited {
   color: var(--color-link);
 }
@@ -29,6 +28,23 @@ a:focus,
 a:active {
   background: var(--color-secondary);
   color: var(--color-copy);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link.active:hover, 
+.navbar-light .navbar-nav .show>.nav-link:hover {
+  cursor: none;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.container-small {
+  max-width: 720px;
 }
 
 .strip {
