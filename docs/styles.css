@@ -115,6 +115,7 @@ a:active {
 
 .navbar {
   padding: 0;
+  background-color: #0191a4;
 }
 .navbar > .navbar-collapse {
   padding: 0.5rem 1rem;
@@ -265,7 +266,7 @@ p {
 }
 
 .page-footer {
-  background-color: #00a2b8;
+  background-color: #0191a4;
   color: white;
   margin-top: 1rem;
   font-size: 0.875rem;
@@ -303,7 +304,7 @@ p {
 }
 
 #wave-4 {
-  fill: #00a2b8;
+  fill: #0191a4;
 }
 
 /* Animation */

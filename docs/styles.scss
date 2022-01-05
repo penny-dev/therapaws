@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400,500,600,700);
 
-$color-primary: #00a2b8;
+$color-primary: #00a2b8; //#009ddb;
+$color-primary-darken: #0191a4;
 $color-primary--rgb: 0, 162, 184;
 $color-secondary: #f9c295;
 $color-copy: #06181a;
@@ -114,6 +115,7 @@ a:active {
 }
 .navbar {
   padding: 0;
+  background-color: $color-primary-darken;
   > .navbar-collapse {
     padding: 0.5rem 1rem;
   }
@@ -255,7 +257,7 @@ p {
 }
 
 .page-footer {
-  background-color: $color-primary;
+  background-color: $color-primary-darken;
   color: white;
   margin-top: 1rem;
   font-size: 0.875rem;
@@ -291,7 +293,7 @@ p {
 }
 
 #wave-4 {
-  fill: rgba($color-primary, 1);
+  fill: $color-primary-darken;
 }
 
 /* Animation */
