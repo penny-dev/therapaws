@@ -57,8 +57,22 @@ a:active {
     justify-content: space-between;
   }
 }
+.page-top .contact-info .fas {
+  display: none;
+}
+@media (min-width: 768px) {
+  .page-top .contact-info .fas {
+    display: inline-flex;
+    margin-right: 0.25rem;
+    color: rgba(6, 24, 26, 0.8);
+  }
+  .page-top .contact-info .fas.fa-envelope {
+    margin-top: 2px;
+  }
+}
 .page-top span {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-right: 1rem;
 }
 @media (min-width: 992px) {

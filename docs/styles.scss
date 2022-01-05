@@ -60,9 +60,21 @@ a:active {
     @media (min-width: 992px) {
       justify-content: space-between;
     }
+    .fas {
+      display: none;
+      @media (min-width: 768px) {
+        display: inline-flex;
+        margin-right: 0.25rem;
+        color: rgba($color-copy, 0.8);
+        &.fa-envelope {
+          margin-top: 2px;
+        }
+      }
+    }
   }
   span {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding-right: 1rem;
     @media (min-width: 992px) {
       padding-right: 0;
