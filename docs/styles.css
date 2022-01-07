@@ -194,9 +194,11 @@ p {
 
 .banner {
   position: relative;
-  background-color: #f9c295;
+  background-color: rgba(249, 194, 149, 0.6);
   max-width: 960px;
-  margin: 0 auto 1rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .banner-image img {
@@ -224,7 +226,7 @@ p {
 }
 
 .section-testimonials {
-  background-color: #f9c295;
+  background-color: rgba(249, 194, 149, 0.6);
 }
 .section-testimonials figure {
   margin: 0;

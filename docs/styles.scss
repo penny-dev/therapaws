@@ -189,9 +189,11 @@ p {
 
 .banner {
   position: relative;
-  background-color: $color-secondary;
+  background-color: rgba($color-secondary, 0.6);
   max-width: 960px;
-  margin: 0 auto 1rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .banner-image img {
@@ -216,7 +218,7 @@ p {
 }
 
 .section-testimonials {
-  background-color: $color-secondary;
+  background-color: rgba($color-secondary, 0.6);
 
   figure {
     margin: 0;
