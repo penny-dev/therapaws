@@ -196,9 +196,14 @@ p {
   position: relative;
   background-color: rgba(249, 194, 149, 0.6);
   max-width: 960px;
-  margin: 1rem auto;
-  border-radius: 1rem;
-  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+@media (min-width: 992px) {
+  .banner {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
 }
 
 .banner-image img {
