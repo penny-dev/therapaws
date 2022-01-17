@@ -240,7 +240,7 @@ p {
 }
 
 .section-testimonials {
-  background-color: rgba(249, 194, 149, 0.6);
+  background-color: rgba(249, 194, 149, 0.3);
 }
 .section-testimonials figure {
   margin: 0;
@@ -251,7 +251,7 @@ p {
   content: open-quote;
   font-size: 16rem;
   position: absolute;
-  color: #f7cca9;
+  color: rgba(249, 194, 149, 0.4);
   font-family: Georgia, serif;
   z-index: -1;
   left: 0;
@@ -312,11 +312,11 @@ p {
 }
 
 #wave-2 {
-  fill: rgba(0, 162, 184, 0.5);
+  fill: rgba(0, 162, 184, 0.4);
 }
 
 #wave-3 {
-  fill: rgba(0, 162, 184, 0.3);
+  fill: rgba(0, 162, 184, 0.2);
 }
 
 #wave-4 {
