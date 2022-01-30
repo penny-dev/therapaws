@@ -31,8 +31,17 @@ a:active {
   color: $color-copy;
 }
 .navbar-light .navbar-nav {
+  @media (min-width: 992px) {
+    & {
+      margin: 0 auto;
+    }
+  }
   .nav-link {
     color: white;
+    @media (min-width: 992px) {
+      font-size: 1.25rem;
+      padding: 0.5rem 1rem;
+    }
   }
   .nav-link.active,
   .show > .nav-link {

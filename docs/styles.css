@@ -22,8 +22,19 @@ a:active {
   color: #06181a;
 }
 
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav {
+    margin: 0 auto;
+  }
+}
 .navbar-light .navbar-nav .nav-link {
   color: white;
+}
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
 }
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
