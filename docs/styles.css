@@ -240,7 +240,7 @@ p {
 }
 
 .section-testimonials {
-  background-color: rgba(249, 194, 149, 0.3);
+  background-color: rgba(0, 162, 184, 0.1);
 }
 .section-testimonials figure {
   margin: 0;
@@ -251,7 +251,7 @@ p {
   content: open-quote;
   font-size: 16rem;
   position: absolute;
-  color: rgba(249, 194, 149, 0.4);
+  color: rgba(0, 162, 184, 0.2);
   font-family: Georgia, serif;
   z-index: -1;
   left: 0;
